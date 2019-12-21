@@ -18,6 +18,8 @@ class String
 
   def count_sentences
     size_array = self.split(/[.!?]/).reject(&:empty?).size
+    
+    #another solution for line 20 = self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.size
 
   end
 end
